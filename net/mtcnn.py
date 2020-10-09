@@ -1,4 +1,4 @@
-from keras.layers import Conv2D, Input,MaxPool2D, Reshape,Activation,Flatten, Dense, Permute
+from keras.layers import Conv2D, Input,MaxPool2D, Reshape, Activation,Flatten, Dense, Permute
 from keras.layers.advanced_activations import PReLU
 from keras.models import Model, Sequential
 import tensorflow as tf

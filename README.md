@@ -8,8 +8,13 @@
 4. [效果 Performance](#Reference)
 
 ### 所需环境
-tensorflow-gpu==1.13.1  
-keras==2.1.5  
+conda install python==3.6.12
+pip install tensorflow-gpu==1.15.4  
+pip install keras==2.2.4
+conda install opencv==3.4.2
+pip uninstall scipy & pip install scipy=1.5.2
+pip uninstall h5py  & pip install h5py
+pip install matplotlib
 
 ### 文件下载
 训练所需的facenet_keras.h5可以在Release里面下载。  

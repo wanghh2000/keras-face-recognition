@@ -5,9 +5,8 @@ from net.mtcnn import mtcnn
 import utils.utils as utils
 from net.inception import InceptionResNetV1
 
-# 使用cpu
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
-
+# 使用gpu
+# os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 class face_rec():
     def __init__(self):
@@ -61,7 +60,7 @@ class face_rec():
 
             # 将检测到的人脸传入到facenet的模型中，实现128维特征向量的提取
             face_encoding = utils.calc_128_vec(self.facenet_model, new_img)
-            print(face_encoding)
+            # print(face_encoding)
             # 记录128维护特征向量到数组
             self.known_face_encodings.append(face_encoding)
             # 记录文件名到数组
