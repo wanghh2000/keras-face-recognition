@@ -1,0 +1,5 @@
+__pycache__
+*.pyc
+*_disp.jpg
+*_disp.npy
+*.npz
